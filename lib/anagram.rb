@@ -1,5 +1,5 @@
 class Anagram
-  attr_accessor :word :some_words
+  attr_accessor :word, :some_words
 
   anagrams = []
   same_length = []
