@@ -9,9 +9,9 @@ class Anagram
     @some_words = some_words
   end
 
-  def anagram_test
-    @some_words.each do|some_word|
-      if @word.length == some_word.length
+  def anagram_test(word,some_words)
+    some_words.each do|some_word|
+      if word.length == some_word.length
         same_length << some_word
       else
         return "Try again"
@@ -19,7 +19,7 @@ class Anagram
     end
 
     same_length.each do |some_word|
-      if @word.split("").sort.join("") == some_word.downcase.split("").sort.join("")
+      if word.split("").sort.join("") == some_word.downcase.split("").sort.join("")
         anagrams << some_word
       else
         return "try again"
