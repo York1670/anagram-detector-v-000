@@ -20,7 +20,7 @@ class Anagram
     same_lengh.each do |some_word|
       if @word.split("").sort.join("") == some_word.downcase.split("").sort.join("")
         anagrams << some_word
-      else 
+      else
         return "try again"
       end
     end
