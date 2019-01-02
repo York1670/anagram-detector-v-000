@@ -24,4 +24,5 @@ class Anagram
         return "try again"
       end
     end
+    return anagrams
   end
